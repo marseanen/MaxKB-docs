@@ -1,0 +1,187 @@
+site_name: 'Документация MaxKB'
+site_url: 'https://maxkb.cn/docs'
+site_description: 'MaxKB — мощная и простая в использовании корпоративная платформа интеллектуальных агентов'
+site_author: 'Команда MaxKB'
+repo_name: 'MaxKB'
+repo_url: 'https://github.com/1Panel-dev/MaxKB'
+
+edit_uri: https://github.com/1Panel-dev/MaxKB-docs
+theme:
+    name: 'material'
+    logo: 'img/logo-white.png'
+    favicon: 'img/facio.ico'
+    language: 'ru'
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - django
+    palette:
+        - scheme: default
+          accent: blue
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to dark mode
+        - scheme: slate
+          accent: blue
+          toggle:
+              icon: material/weather-night
+              name: Switch to light mode
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.indexes
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - search.share
+        - header.autohide
+        - content.tabs.link
+    custom_dir: "theme"
+nav:
+    - Описание продукта: index.md
+    - Быстрый старт: quick_start.md
+    - Журнал изменений: changelog.md
+    - Архитектура системы: system_arch.md
+    - Установка и развертывание:
+        - Оффлайн установка: installation/offline_installtion.md
+        - Онлайн установка: installation/online_installtion.md
+        - Установка 1Panel: installation/1panel_installtion.md
+        - Установка на Aliyun: installation/aliyun.md
+        - Установка на Tencent Cloud: installation/tencent.md
+        - Командная строка: installation/cli.md
+    - Руководство пользователя:
+        - Модели:
+              - Обзор моделей: user_manual/model/model_summary.md
+              - Интеграция моделей:
+                    - Alibaba Bailian: user_manual/model/bailian_model.md
+                    - Anthropic: user_manual/model/anthropic_model.md
+                    - Amazon Bedrock: user_manual/model/amazon_bedrock_model.md
+                    - Azure OpenAI: user_manual/model/azure_openai_model.md
+                    - DeepSeek: user_manual/model/deepseek_model.md
+                    - Gemini: user_manual/model/gemini_model.md
+                    - Kimi: user_manual/model/kimi_model.md
+                    - OpenAI: user_manual/model/openai_model.md
+                    - Regolo: user_manual/model/Regolo_model.md
+                    - SILICONFLOW: user_manual/model/siliconflow_model.md
+                    - Tencent Cloud: user_manual/model/tencentcloud_model.md
+                    - Tencent Hunyuan: user_manual/model/hunyuan_model.md
+                    - Volcano (Doubao): user_manual/model/doubao_model.md
+                    - Baidu Qianfan: user_manual/model/qianfan_model.md
+                    - iFlytek Spark: user_manual/model/spark_model.md
+                    - Zhipu AI: user_manual/model/zhipu_model.md
+                    - Локальная модель: user_manual/model/local_model.md
+                    - Ollama: user_manual/model/ollama_model.md
+                    - vLLM: user_manual/model/vllm_model.md
+                    - Xorbits Inference: user_manual/model/X-Infer_model.md
+              - Параметры моделей: user_manual/model/model_param.md
+        - Инструменты: user_manual/tool/tool.md
+        - База знаний:
+            - База знаний: user_manual/dataset/dataset.md
+            - Документы: user_manual/dataset/doclist.md
+            - Вопросы: user_manual/dataset/problem.md
+            - Тест попаданий: user_manual/dataset/hit-testing.md
+        - Приложения:
+            - Обзор приложений: user_manual/app/app.md
+            - Создание приложений:
+                - Простая конфигурация: user_manual/app/simple_app.md
+                - Продвинутая оркестрация: user_manual/app/workflow_app.md
+            - Обзор (вид): user_manual/app/app-view.md
+            - Журнал диалогов: user_manual/app/log.md
+        - Управление пользователями: user_manual/user_community.md
+        - Авторизация ресурсов: user_manual/X-Pack/authorization_resources.md
+        - Системные настройки: user_manual/email.md
+        - X-Pack:
+            - Пользователи: user_manual/X-Pack/user.md
+            - Рабочие пространства: user_manual/X-Pack/workspace.md
+            - Роли: user_manual/X-Pack/role.md
+            - Ресурсы: user_manual/X-Pack/resource_management.md
+            - Общие ресурсы: user_manual/X-Pack/shared_resources.md
+            - Пользователи диалога: user_manual/X-Pack/chat_user.md
+            - Настройки приложений:
+                - Настройки отображения: user_manual/X-Pack/app_logo_settting.md
+                - Интеграция приложений: user_manual/X-Pack/app_integrate.md
+                - Аутентификация: user_manual/X-Pack/app_auth.md
+                - Пользователи диалога: user_manual/X-Pack/app_chatueser.md
+            - Документы Feishu: user_manual/X-Pack/feishu_doc.md
+            - Системные настройки:
+                    - Оформление системы: user_manual/X-Pack/theme_settings.md
+                    - Логин‑аутентификация: user_manual/X-Pack/login_auth.md
+            - Журнал операций: user_manual/X-Pack/operation_log.md
+            - Системный API: user_manual/X-Pack/system_API.md
+   #- Документация для разработчиков:
+        #- Подготовка окружения: dev_manual/dev_environment.md
+        #- Диалог через API KEY: dev_manual/APIKey_chat.md
+    - Частые вопросы:
+        - Установка и конфигурация: faq/install_configuration.md
+        - Системное администрирование: faq/system_management.md
+        - Библиотека функций: faq/function_library.md
+        - База знаний: faq/knowledge_base.md
+        - Приложения: faq/apply_setting.md
+    - Практические руководства:
+            - Оффлайн‑деплой LLM в Ollama: faq/Offline_install_OllamaModel.md
+            - Запуск LLM в Ollama с GPU: faq/GPU_runOllama.md
+            - Интеграция помощника MaxKB в Halo: faq/maxkb_In_halo.md
+            #- MaxKB и Dify — отличия: faq/MaxKB VS.Dify.md
+            - Как корректно сегментировать документы БЗ: faq/doc_segment.md
+  #- Учебные видео: instructional_video
+    - Контакты: contact.md
+    
+markdown_extensions:
+    - admonition
+    - codehilite:
+          guess_lang: True
+          linenums: False
+    - toc:
+          permalink: True
+    - footnotes
+    - attr_list
+    - def_list
+    - tables
+    - abbr
+    - md_in_html
+    - pymdownx.extra
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_generator: !!python/name:pymdownx.emoji.to_png
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist
+    - pymdownx.tilde
+    - pymdownx.betterem
+    - pymdownx.progressbar
+#    - lightgallery
+    - pymdownx.tabbed
+
+extra_css:
+    - css/extra.css
+
+copyright: Copyright &copy; 2014-2025 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">浙ICP备14038283号-9</a>
+
+plugins:
+    - search:
+          lang:
+              - ru
+              - en
+          separator: '[\s\-\.]+'
+extra:
+    version:
+      provider: mike
+      warning: false
+    analytics:
+      provider: google
+      property: G-NG51348CBW
+    social:
+      - icon: fontawesome/brands/github
+        link: https://github.com/1Panel-dev/MaxKB
+      - icon: fontawesome/solid/envelope
+        link: mailto:support@fit2cloud.com
+      - icon: fontawesome/solid/phone
+        link: tel://400-052-0755
