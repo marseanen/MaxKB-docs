@@ -1,13 +1,11 @@
 # Как запустить модели LLM в Ollama на GPU
 
-!!! Abstract ""
-    На примере NVIDIA показаны шаги запуска больших моделей в режиме GPU в Ollama.
+На примере NVIDIA показаны шаги запуска больших моделей в режиме GPU в Ollama.
 
 
 ## 1 Установка NVIDIA Container Toolkit
 
-!!! Abstract ""
-    На примере Ubuntu 22.04 (для других систем см. [официальную документацию NVIDIA](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/arch-overview.html))
+На примере Ubuntu 22.04 (для других систем см. [официальную документацию NVIDIA](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/arch-overview.html))
 
     - Настройка источников apt
     ```
@@ -27,22 +25,19 @@
 
 ## 2 Запуск Ollama с доступом к GPU
 
-!!! Abstract ""
-    ```
-    # Запуск контейнера ollama в фоне с доступом ко всем доступным GPU NVIDIA на хосте
-    docker run --gpus all -d -v /opt/ai/ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
-    ```
+```
+# Запуск контейнера ollama в фоне с доступом ко всем доступным GPU NVIDIA на хосте
+docker run --gpus all -d -v /opt/ai/ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+```
 
 ## 3 Загрузка моделей через Ollama
 
-!!! Abstract ""
-    ```
-    # Онлайн‑загрузка и запуск модели
-    docker exec -it ollama ollama run qwen:7b
-    ```
+```
+# Онлайн‑загрузка и запуск модели
+docker exec -it ollama ollama run qwen:7b
+```
 
 ## 4 Добавление модели Ollama в MaxKB
 
-!!! Abstract ""
-    После загрузки и запуска сервиса модели добавьте соответствующую модель в MaxKB и используйте её.
+После загрузки и запуска сервиса модели добавьте соответствующую модель в MaxKB и используйте её.
 ![Добавить модель](../img/FAQ/addmodel.png)

@@ -1,9 +1,7 @@
-!!! Abstract ""
-
-    MaxKB и Dify — оба open‑source проекта на базе LLM, но их позиционирование и возможности отличаются:
-
-    - Позиционирование: Dify — платформа для разработки приложений на базе LLM (middle‑ware); MaxKB — готовое приложение Q&A на базе LLM и RAG.
-    - Сравнение возможностей: ниже — сравнительная таблица от Dify (с LangChain, Flowise и др.); MaxKB — это приложение на базе LangChain, дополняющее Workflow и SSO для enterprise‑сценариев.
+MaxKB и Dify — оба open‑source проекта на базе LLM, но их позиционирование и возможности отличаются:
+    
+- Позиционирование: Dify — платформа для разработки приложений на базе LLM (middle‑ware); MaxKB — готовое приложение Q&A на базе LLM и RAG.
+- Сравнение возможностей: ниже — сравнительная таблица от Dify (с LangChain, Flowise и др.); MaxKB — это приложение на базе LangChain, дополняющее Workflow и SSO для enterprise‑сценариев.
 
     <table style="width: 100%;height: 80%;">
       <tr>

@@ -1,27 +1,23 @@
 # Как офлайн‑развернуть LLM‑модель в Ollama
 
 
-!!! Abstract "" 
-    На примере модели qwen:0.5b показан процесс офлайн‑развертывания LLM в Ollama.
+На примере модели qwen:0.5b показан процесс офлайн‑развертывания LLM в Ollama.
 
 ## 1 Загрузка модели
 
-!!! Abstract ""
-    Перейдите на huggingface и скачайте файл модели qwen1_5-0_5b-chat-q5_k_m.gguf.
-    ```
-    https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat-GGUF/tree/main
-    ```
+Перейдите на huggingface и скачайте файл модели qwen1_5-0_5b-chat-q5_k_m.gguf.
+```
+https://huggingface.co/Qwen/Qwen1.5-0.5B-Chat-GGUF/tree/main
+```
 ![Загрузка модели](../img/FAQ/downModel.png)
 
 ## 2 Загрузка модели на сервер
 
-!!! Abstract ""
-    Загрузите скачанный файл Qwen1.5-0.5B-Chat-GGUF на сервер, где установлен Ollama.
+Загрузите скачанный файл Qwen1.5-0.5B-Chat-GGUF на сервер, где установлен Ollama.
 
 ## 3 Создание Ollama Modelfile
 
-!!! Abstract ""
-    Создайте файл Modelfile со следующим содержимым:
+Создайте файл Modelfile со следующим содержимым:
     ```
     FROM ./qwen1_5-0_5b-chat-q5_k_m.gguf
 
@@ -41,12 +37,11 @@
 
 ## 4 Создание модели в Ollama
 
-!!! Abstract ""
-    Выполните команду для создания модели:
+Выполните команду для создания модели:
     ```
     ollama create qwen:0.5b -f Modelfile
     ```
-    Проверьте, что модель создана:
+Проверьте, что модель создана:
     ```
     ollama list
     ```
